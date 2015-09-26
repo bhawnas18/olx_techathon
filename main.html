@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 90%;
+      }
+    </style>
+</head>
+<body>
+<form>
+	City:<select id="city" onchange="myFunction()">		
+<option value="Delhi">Delhi</option>
+<option value="Bengaluru" >Bengaluru</option>
+<option value="Chennai">Chennai</option>
+<option value="Gurgaon">Gurgaon</option>
+<option value="Noida">Noida</option>
+<option value="Mumbai">Mumbai</option>
+</select>
+  Category:<select id="category" onchange="myFunction()">	 	
+  <option value="Mobiles and Tablets">Mobiles and Tablets</option>
+<option value="Electronics and Computer">Electronics and Computer</option>
+<option value="Vehicles">Vehicles</option>
+<option value="Home and Furniture">Home and Furniture</option>
+<option value="Animals">Animals</option>
+<option value="Fashion and Beauty">Fashion and Beauty</option>
+<option value="Kids and Baby products">Kids and Baby products</option>
+<option value="Services">Services</option>
+</select>
+  Radial-Distance: <input id="distance" onchange="myFunction()" type="number" name="distance" min="1" value="3">KM
+
+</form>
+
+
+ <div class="col-md-12 col-sm-12 col-xs-12" id="map"></div>
+
+<script src="Sampleads.js"></script>
+
+	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC535nak_Fg4CQwe9SKfvev7wtNuoFwK4o&callback=initMap">
+    </script>
+</body>
+</html>
